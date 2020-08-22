@@ -19,22 +19,23 @@ exports.jarakTempuh_Mobil = (waktuAwal, waktuSampai, kecepatan1) => {
       akhir = "";
       idx++;
     }
-  }
-  let waktuAwal_detik = tempAwal[0] * 3600 + tempAwal[1] * 60 + tempAwal[2];
-  let waktuSampai_detik =
-    tempAkhir[0] * 3600 + tempAkhir[1] * 60 + tempAkhir[2];
+    let waktuAwal_detik = tempAwal[0] * 3600 + tempAwal[1] * 60 + tempAwal[2];
+    let waktuSampai_detik =
+      tempAkhir[0] * 3600 + tempAkhir[1] * 60 + tempAkhir[2];
 
-  selisih_waktu = waktuSampai_detik - waktuAwal_detik;
+    selisih_waktu = waktuSampai_detik - waktuAwal_detik;
 
-  for (let i = 0; i <= selisih_waktu; i++) {
-    if (i === 300) {
-      newTime = i;
-      percepatan += 2;
-    } else if (i === newTime + 600) {
-      newTime = i;
-      percepatan += 1;
+    for (let i = 0; i <= selisih_waktu; i++) {
+      if (i === 300) {
+        newTime = i;
+        percepatan += 2;
+      } else if (i === newTime + 600) {
+        newTime = i;
+        percepatan += 1;
+      }
     }
   }
+
   jarakTempuh += percepatan * newTime;
   return jarakTempuh;
 };
