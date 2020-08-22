@@ -1,0 +1,26 @@
+{
+  "name": "mileage",
+  "version": "1.0.0",
+  "description": "Hitung jarak tempuh mobil",
+  "main": "App.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rezhaibrahim/mileage.git"
+  },
+  "keywords": [
+    "Javascript",
+    "es6",
+    "jarak",
+    "kecepatan",
+    "waktu"
+  ],
+  "author": "rezha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rezhaibrahim/mileage/issues"
+  },
+  "homepage": "https://github.com/rezhaibrahim/mileage#readme"
+}
